@@ -1,0 +1,17 @@
+﻿1. 服务器浏览模式
+   (1) https://
+       Hyper Text Transfer Protocol Security
+       超文本加密传输协议
+
+   (2) http://
+       Hyper Text Transfer Protocol
+       超文本传输协议
+
+   (3) ftp://
+       File Transfer Protocol
+       文件传输协议
+
+2. 本地文件浏览模式
+   file://
+   文件协议
+   /D:/web/20191029/index.html

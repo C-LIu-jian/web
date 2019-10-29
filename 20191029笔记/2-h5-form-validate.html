@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- 响应式设计 Responsive Design -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML5</title>
+  </head>
+  <body>
+    <!-- American Standard Code II -->
+    <h1>表单 Form</h1>
+    <h2>表单验证 Form Validate</h2>
+    <form method="get" novalidate>
+      <input type="hidden" name="cmd" value="register">
+      <input type="hidden" name="mode" value="new">
+      <div>
+        <label>用户名 (input text)：</label>
+        <div>
+          <!-- tidy html style -->
+          <input type="text"
+                 name="username"
+                 placeholder="请输入登录用户名……"
+                 minlength="3"
+                 maxlength="12"
+                 required>
+        </div>
+      </div>
+      <div>
+        <label>密码 (input password)：</label>
+        <div>
+            url
+            ftp://username:password@192.168.3.1
+            <input type="password"
+                   name="password"
+                   placeholder="请输入登录密码……"
+                   minlength="6"
+                   maxlength="16"
+                   required>
+        </div>
+      </div>
+      <div>
+        <label>确认 (input password)：</label>
+        <div>
+          <input type="password"
+                 name="confirm"
+                 placeholder="请输入确认密码……"
+                 minlength="6"
+                 maxlength="16"
+                 required>
+        </div>
+      </div>
+      <div>
+        <label>性别 (select)：</label>
+        <div>
+          <select name="gender">
+            <option value="secure">保密</option>
+            <option value="female">女士</option>
+            <option value="male">男士</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label>性别 (input radio)：</label>
+        <div>
+          <input name="gender" type="radio" value="female" />
+          女士
+          <input name="gender" type="radio" value="male" /> 男士
+          <input name="gender" type="radio" value="secure" checked /> 保密
+        </div>
+      </div>
+      <div>
+        <label>爱好 (input checkbox)：</label>
+        <div>
+          <input name="read" type="checkbox" value="yes" /> 阅读
+          <input name="movie" type="checkbox" /> 影视
+          <input name="food" type="checkbox" checked /> 美食
+        </div>
+      </div>
+      <div>
+        <label>邮箱 (input email)：</label>
+        <div>
+          <input type="email" name="email" placeholder="可选……" />
+        </div>
+      </div>
+      <div>
+        <label>年龄 (input number)：</label>
+        <div>
+          <input type="number" name="age" max="80" min="18" value="18" />
+        </div>
+      </div>
+      <div>
+        <label>年薪 (input range)：</label>
+        <div>
+          <input type="range" name="coins" max="100" min="0" step="10" />
+        </div>
+      </div>
+      <div>
+        <label>日期 (input date)：</label>
+        <div>
+          <div>
+            <input type="date"
+                   name="date"
+                   value="2019-10-29" />
+          </div>
+          <div>
+            <input type="month"
+                   name="month"
+                   value="2019-10" />
+          </div>
+          <div>
+            <input type="datetime-local"
+                   name="datetime"
+                   value="2019-02-28T13:44" />
+          </div>
+        </div>
+      </div>
+      <p><button>用户注册</button></p>
+    </form>
+</body>
+</html>

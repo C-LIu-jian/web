@@ -1,0 +1,28 @@
+﻿分散的资源
+    C:\web\...
+    D:\www\...
+    E:\project
+
+所有资源（超文本、样式表、JS脚本、图片、音频和视频等）要放在一起！
+    C:\web\*.* => E:\project\web
+    D:\www\*.* => E:\project\www
+
+关键：所有文件都需在同一个（发布）文件夹下，如：project
+以不同路径位置下的 index.html 引用图片作说明演示：
+
+/project （服务器发布根目录 Server DocumentRoot）
+    |--- /css
+    |      \--- main.css
+    |--- /images
+    |      \--- bg.jpg
+    |--- /demo
+    |      \--- index.html 引用方式
+    |           相对路径：<img src="../../media/img.mp3" />
+    |           绝对路径：<img src="/images/bg.jpg" />
+    |--- /js
+    |      \--- index.html 引用方式
+    |           相对路径：<img src="../images/bg.jpg" />
+    |           绝对路径：<img src="/images/bg.jpg" />
+    \--- index.html
+         相对路径：<img src="images/bg.jpg" />
+         绝对路径：<img src="/images/bg.jpg" />

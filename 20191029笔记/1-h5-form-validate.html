@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>HTML5</title>
+</head>
+<body>
+    <h1>表单 Form</h1>
+    <!-- <h1>响应式设计 Responsive Design</h1> -->
+    <form method="get">
+        <div>
+            <label>用户名：</label>
+            <div>
+                <!-- tidy -->
+                <input type="text"
+                       name="username"
+                       placeholder="请输入登录用户名……"
+                       minlength="3"
+                       maxlength="12"
+                       required>
+            </div>
+        </div>
+        <div>
+            <label>密码：</label>
+            <div>
+                <input type="password"
+                       name="password"
+                       placeholder="请输入登录密码……"
+                       minlength="6"
+                       maxlength="16"
+                       required>
+            </div>
+        </div>
+        <div>
+            <label>密码确认：</label>
+            <div>
+                <input type="password"
+                       name="confirm"
+                       placeholder="请输入确认密码……"
+                       minlength="6"
+                       maxlength="16"
+                       required>
+            </div>
+        </div>
+        <div>
+            <label>性别：</label>
+            <div>
+                <input type="radio" name="gender" value="female"> 女士
+                <input type="radio" name="gender" value="male"> 男士
+                <input type="radio" name="gender" checked value="secure"> 保密
+            </div>
+        </div>
+        <div>
+            <label>爱好：</label>
+            <div>
+                <input type="checkbox" name="read" value="yes"> 阅读
+                <input type="checkbox" name="movie"> 影视
+                <input type="checkbox" checked name="food"> 美食
+            </div>
+        </div>
+        <div>
+            <label>邮箱：</label>
+            <div>
+                <input type="email" name="email" placeholder="可选……">
+            </div>
+        </div>
+        <div>
+            <label>年龄：</label>
+            <div>
+                <input type="number"
+                name="age"
+                value="18"
+                min="18"
+                max="80">
+            </div>
+        </div>
+        <div>
+            <label>年薪：</label>
+            <div>
+                <input type="range" name="coins" step="10" min="0" max="100">
+            </div>
+        </div>
+        <!-- <input type="submit"> -->
+        <!-- <input type="reset"> -->
+        <!--  value="submit Login" -->
+        <!-- <input type="button" onclick="login()" value="button Login"> -->
+        <!-- <input type="button" value=""> -->
+        <p>
+            <button>用户注册</button>
+        </p>
+    </form>
+    <h2>
+        表单验证 Form Validate
+    </h2>
+</body>
+</html>
