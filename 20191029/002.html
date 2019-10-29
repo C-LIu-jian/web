@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>表单</title>
+  </head>
+  <body>
+    <form action="" method="GET" novalidate>
+      <div>
+        <label>用户名</label>
+        <div>
+          <input
+            type="text"
+            width=""
+            id="user"
+            name="username"
+            placeholder="请输入登录用户名..."
+            minlength="3"
+            maxlength="12"
+            required
+            />
+        </div>
+      </div>
+      <div>
+        <label>Email Box</label>
+        <div><input type="text" /></div>
+      </div>
+      <div>
+        <label>PassWord</label>
+        <div><input type="password" name="password" /></div>
+      </div>
+      <div>
+        <label>Gender</label>
+        <div>
+        <input type="radio" name="gender" checked name="男" />男士
+        <input type="radio" name="gender" name="女" />女士
+        <input type="radio" name="gender" name="secure" />保密
+        </div>
+      </div>
+      <div>
+        <label>Gender</label>
+        <div>
+        <select name="gender" id="">
+        <option value="male">男士</option>
+        <option value="female">女士</option>
+        <option value="secure" selected>保密</option>
+
+
+
+        </select>
+        </div>
+      </div>
+    </div>
+      <input type="checkbox" name="chang" value="" />唱
+      <input type="checkbox" name="tiao" value="" />跳
+      <input type="checkbox" name="rap" value="" />rap
+    </div><br>
+    <div>
+     <label>邮箱</label>
+     <div>
+   <input type="email" name="email" placeholder="可选">
+     </div>
+    </div>
+    <div>
+     <label>年龄</label>
+     <div>
+   <input type="number" name="age" min="1" max="120">
+     </div>
+    </div>
+    <div>
+     <label>工资</label>
+     <div>
+   <input type="range" name="coins" step="10" min="0" max="100">
+     </div>
+    </div>
+    <div>
+     <label>日期</label>
+     <div>
+         <input type="date" name="date" value="2019-10-29" >
+     </div>
+     <div>
+         <input type="month" name="month"value="2019-10" >
+     </div>
+     <div>
+        <input type="datetime-local" name="dateTime" id="">
+     </div>
+     </div>
+    </div>
+    <!-- 隐藏标签 -->
+    <input type="hidden" name="cmd" value="register">
+      <input type="reset" />
+      <button>提交</button>
+    </form>
+  </body>
+</html>

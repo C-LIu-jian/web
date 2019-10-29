@@ -1,0 +1,6 @@
+ 前端  用户交互界面    html  css  javaScript
+                    Hyper   Text  Making   Language
+ 后端  数据库与操作    java
+
+ 中国            日本
+ java         VB  COBLE

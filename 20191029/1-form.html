@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>表单</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <div>
+        <label>用户名</label>
+        <div>
+          <input
+            type="text"
+            name="username"
+            placeholder="请输入用户名.."
+            minlength="3"
+            maxlength="15"
+            required
+          />
+        </div>
+      </div>
+      <div>
+        <label>密码</label>
+        <div>
+          <input
+            type="password"
+            name="password"
+            placeholder="请输入密码.."
+            minlength="6"
+            maxlength="16"
+            required
+          />
+        </div>
+      </div>
+      <div>
+        <label>密码确认</label>
+        <div>
+          <input
+            type="password"
+            name="confirm"
+            placeholder="请确认输入密码.."
+            minlength="6"
+            maxlength="16"
+            required
+          />
+        </div>
+      </div>
+      <div>
+        <label>性别</label>
+        <div>
+          <input type="radio" name="gender" value="female" />女士
+          <input type="radio" name="gender" value="male" /> 男士
+          <input type="radio" name="gender" value="secure" checked />保密
+        </div>
+      </div>
+      <div>
+        <label>爱好</label>
+        <div>
+          <input type="checkbox" name="read" value="yes" />阅读
+          <input type="checkbox" name="movie" />影视
+          <input type="checkbox" name="food" checked />美食
+        </div>
+      </div>
+      <div>
+        <label>邮箱</label>
+        <div>
+          <input type="email" name="email" placeholder="可选..." />
+        </div>
+      </div>
+      <div>
+        <label>年龄</label>
+        <div>
+          <input type="number" name="age" value="18" min="18" max="80" />
+        </div>
+      </div>
+      <div>
+        <label>年薪</label>
+        <div>
+          <input type="range" name="coins" step="10" min="0" max="100" />
+        </div>
+      </div>
+      <div>
+        <label>性别</label>
+        <div>
+          <select name="gender">
+            <option value="secure">保密</option>
+            <option value="female">女士</option>
+            <option value="male">男士</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label>日期</label>
+        <div>
+          <input type="date" name="date" value="2019-10-29" />
+        </div>
+        <div>
+          <input type="month" name="month" value="2019-10" />
+        </div>
+        <div>
+          <input
+            type="datetime-local"
+            name="datetime"
+            value="2019-10-29T13:44"
+          />
+        </div>
+      </div>
+
+      <p><button>用户注册</button></p>
+    </form>
+  </body>
+</html>
