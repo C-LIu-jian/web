@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS3</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .code {
+        font-family: Consolas;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .list {
+        font-size: 24px;
+      }
+      /* .list li:first-child {
+        color: red;
+      } */
+      /* .list li:last-child {
+        color: green;
+      } */
+      .list li:nth-last-child(4n+1) {
+        color: red;
+      }
+      .list li:nth-last-child(4n+3) {
+        color: green;
+      }
+      .list li:nth-last-child(3n) {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS 样式表 3</h1>
+    <h2>伪选择器</h2>
+    <!-- parent tag -->
+    <ol class="list">
+      <!-- child tag -->
+      <li>Alpha</li>
+      <li>Bravo</li>
+      <li>Delta</li>
+      <li>Echo</li>
+      <li>Foxtrot</li>
+      <li>Hotel</li>
+      <li>Juliet</li>
+      <li>Kilo</li>
+    </ol>
+  </body>
+  </html>

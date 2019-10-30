@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS3</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 外链式，内联式，嵌入式（引用 import） -->
+    <style>
+        .code {
+            font-size: 24px;
+        }
+        .list p {
+            color: green;
+        }
+        .list > .item {
+            color: red;
+        }
+        .list .item ~ .out {
+            color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <h2 id="title" class="title">CSS 3</h2>
+    <h2 class="title">层叠样式表</h2>
+    <h2 class="title">Cascading Style Sheets</h2>
+    <h2>选择器 Selector</h2>
+
+    <ol class="list">
+        <li class="item">锚点 (ID) #id_name</li>
+        <li class="item">类名 (class name) .class_name</li>
+        <li class="item">标签名 (tag name) tag_name</li>
+        <p class="item">1</p>
+        <div class="item">
+            <p>2</p>
+        </div>
+    </ol>
+    <h2>Emmet 快捷输入法（末尾按&lt;TAB&gt;键上屏）</h2>
+    <pre class="code">ol.list>li.item*3+p.item+div.item>p</pre>
+    <h2>产生如下 HTML 结构：</h2>
+    <pre class="code">
+        &lt;ol class="list"&gt;
+            &lt;li class="item"&gt;&lt;/li&gt;
+            &lt;li class="item"&gt;&lt;/li&gt;
+            &lt;li class="item"&gt;&lt;/li&gt;
+            &lt;p class="item"&gt;&lt;/p&gt;
+            &lt;div class="item"&gt;
+                &lt;p&gt;&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/ol&gt;
+    </pre>
+  </body>
+</html>

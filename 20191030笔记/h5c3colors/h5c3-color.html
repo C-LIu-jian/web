@@ -1,0 +1,1261 @@
+<!-- 网页设计：色彩与演示 @SparkSystemStudio 2019 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML5 CSS3 Colors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1 class="cart">
+      <div class="one">
+        <span class="title">网页色彩 Html5 Css3 Web Colors</span>
+        <sub class="info">
+          <small class="txt">背景色</small>
+          <div class="hex">#ffffff</div>
+          <div class="sht">#fff</div>
+        </sub>
+      </div>
+      <div class="ins">
+        <i>rgb(</i>
+        <input type="text" id="red" value="255" class="red">
+        <!-- <input type="range" id="red" min="0" max="255" step="1" onchange="set()" value="255"> -->
+        <i>,</i>
+        <input type="text" id="green" value="255" class="green">
+        <i>,</i>
+        <input type="text" id="blue" value="255" class="blue">
+        <i>)</i>
+      </div>
+    </h1>
+    <h2>色彩值表示方法：</h2>
+    <ol class="list">
+      <li>
+        英文颜色名称：
+        <div>以颜色的英文名称标识颜色，数量有限</div>
+        <div>常用颜色名称有：</div>
+        <div class="colors">
+          <div class="color w" style="background: red;">red</div>
+          <div class="color" style="background: lime;">lime</div>
+          <div class="color w" style="background: blue;">blue</div>
+          <div class="color w" style="background: black;">black</div>
+          <div class="color w" style="background: gray;">gray</div>
+          <div class="color" style="background: white;">white</div>
+          <div class="color" style="background: orange;">orange</div>
+          <div class="color" style="background: yellow;">yellow</div>
+          <div class="color w" style="background: navy;">navy</div>
+        </div>
+        <div class="colors">
+          <div class="color w" style="background: green;">green</div>
+          <div class="color w" style="background: darkgreen;">darkGreen</div>
+          <div class="color" style="background: yellowgreen;">yellowGreen</div>
+          <div class="color" style="background: lightgreen;">lightGreen</div>
+          <div class="color" style="background: darkgray;">darkGray</div>
+          <div class="color" style="background: lightgray;">lightGray</div>
+        </div>
+        <div class="colors">
+          <div class="color w" style="background: brown;">brown</div>
+          <div class="color" style="background: orangered;">orangeRed</div>
+          <div class="color" style="background: pink;">pink</div>
+          <div class="color" style="background: violet;">violet</div>
+          <div class="color w" style="background: purple;">purple</div>
+          <div class="color" style="background: skyblue;">skyBlue</div>
+        </div>
+      </li>
+      <li>
+        十六进制 RGB 值：#RRGGBB &lt;=&gt; #{红}{绿}{蓝}
+        <div>RR: 十六进制的红色值，值域 HEX：00 ~ FF，（对应 DEC: 0 ~ 255）</div>
+        <div>GG: 十六进制的绿色值，值域 HEX：00 ~ FF，（对应 DEC: 0 ~ 255）</div>
+        <div>BB: 十六进制的蓝色值，值域 HEX：00 ~ FF，（对应 DEC: 0 ~ 255）</div>
+        <p>
+          熟练辨识：十六进制与对应的十进制数<br>
+          如：(HEX) 32 (DEC) 50、(HEX) 64 (DEC) 100
+        </p>
+        <p>
+          简写：如果红绿蓝三色的十六进制数两两相同，可都简写为一位<br>
+          例如：#00CC33 可以简写为 #0C3，而 #335099 则不能简写，#3509 是错误的！
+        </p>
+        <p>
+          <div>安全色：在任意浏览器里显示的差异性最小的配色</div>
+          <div>所有分色（红绿蓝）都使用：00 33 66 99 CC FF。</div>
+          <div>熟悉相关数值：</div>
+          <pre>
+            #0066CC    rgb(  0, 102, 204)
+            #3399FF    rgb( 51, 153, 255)
+          </pre>
+          <p>安全色的差异如下图所示：</p>
+          <div class="group">
+            <div class="item w" style="background: #B22222;">
+              <strong>火砖红<br>#B22222</strong>
+            </div>
+            <div class="item w" style="background: #C33;">
+              <strong>安全色<br>#CC3333</strong>
+            </div>
+            <div class="item w" style="background: #CD853F;">
+              <strong>秘鲁红<br>#CD853F</strong>
+            </div>
+            <div class="item w" style="background: #C93;">
+              <strong>安全色<br>#CC9933</strong>
+            </div>
+            <div class="item w" style="background: #556B2F;">
+              <strong>橄榄绿<br>#556B2F</strong>
+            </div>
+            <div class="item w" style="background: #663;">
+              <strong>安全色<br>#666633</strong>
+            </div>
+            <div class="item" style="background: #8FBC8F;">
+              <strong>深海绿<br>#8FBC8F</strong>
+            </div>
+            <div class="item" style="background: #9C9;">
+              <strong>安全色<br>#99CC99</strong>
+            </div>
+            <div class="item" style="background: #87CEFA;">
+              <strong>天蓝色<br>#87CEFA</strong>
+            </div>
+            <div class="item" style="background: #9CF;">
+              <strong>安全色<br>#99CCFF</strong>
+            </div>
+            <div class="item" style="background: #FFF8DC;">
+              <strong>玉米黄<br>#FFF8DC</strong>
+            </div>
+            <div class="item" style="background: #FFC;">
+              <strong>安全色<br>#FFFFCC</strong>
+            </div>
+          </div>
+        </p>
+      </li>
+      <li>
+        十进制 RGB 值：rgb(Red, Green, Blue)
+        <div>Red 红色十进制值，值域 DEC：0 ~ 255</div>
+        <div>Green 红色十进制值，值域 DEC：0 ~ 255</div>
+        <div>Blue 红色十进制值，值域 DEC：0 ~ 255</div>
+      </li>
+      <li>
+        HSL 值：hsl(H, S%, L%)
+        <div><img src="imgs/hsl-color-wheel.png" /></div>
+        <ul>
+          <li>
+            H（色调）Hue，值域：0 ~ 360（0或360 红，120 绿，240 蓝）
+          </li>
+          <li>S（饱和度）Saturation，值域：0.0% ~ 100.0%</li>
+          <li>L（亮度）Lightness，值域：0.0% ~ 100.0%</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>常用颜色表</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>英文颜色名</th>
+          <th>中文名</th>
+          <th style="background: #666;color: #fff">RGB 16进制</th>
+          <th>RGB 10进制</th>
+          <th>词源/备注</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>AliceBlue</td>
+          <td style="background: AliceBlue;">爱丽丝蓝</td>
+          <td class="cv">#F0F8FF</td>
+          <td class=>240, 248, 255</td>
+          <td>西奥多·罗斯福长女爱丽丝·罗斯福·朗沃斯创造的时尚色</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>AntiqueWhite</td>
+          <td style="background: AntiqueWhite;">古董白</td>
+          <td class="cv">#FAEBD7</td>
+          <td>250, 235, 215</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>AquaMarine</td>
+          <td style="background: AquaMarine;">碧　绿</td>
+          <td class="cv">#7FFFD4</td>
+          <td>127, 255, 212</td>
+          <td>亦作“碧蓝”，但其主色调为绿色</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Azure</td>
+          <td style="background: Azure;">青白色</td>
+          <td class="cv">#F0FFFF</td>
+          <td>240, 255, 255</td>
+          <td>本为湛蓝，但在Web色中是一种浅色</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Beige</td>
+          <td style="background: Beige;">米　色</td>
+          <td class="cv">#F5F5DC</td>
+          <td>245, 245, 220</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Bisque</td>
+          <td style="background: Bisque;">陶坯黄</td>
+          <td class="cv">#FFE4C4</td>
+          <td>255, 228, 196</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Black</td>
+          <td style="color: #fff;background: Black;">黑　色</td>
+          <td class="cv">#000000</td>
+          <td>&nbsp;&nbsp;0, &nbsp;&nbsp;0, &nbsp;&nbsp;0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>BlanchedAlmond</td>
+          <td style="background: BlanchedAlmond;">杏仁白</td>
+          <td class="cv">#FFEBCD</td>
+          <td>255, 235, 205</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Blue</td>
+          <td style="color: #fff;background: Blue;">蓝　色</td>
+          <td class="cv">#0000FF</td>
+          <td>&nbsp;&nbsp;0, &nbsp;&nbsp;0, 255</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>BlueViolet</td>
+          <td style="color: #fff;background: BlueViolet;">蓝紫色</td>
+          <td class="cv">#8A2BE2</td>
+          <td>138, &nbsp;43, 226</td>
+          <td>即“蓝紫罗兰色”，直译名称过长</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Brown</td>
+          <td style="color: #fff;background: Brown;">褐　色</td>
+          <td class="cv">#A52A2A</td>
+          <td>165, &nbsp;42, &nbsp;42</td>
+          <td>亦作“棕色”</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>BurlyWood</td>
+          <td style="background: BurlyWood;">硬木褐</td>
+          <td class="cv">#DEB887</td>
+          <td>222, 184, 135</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>CadetBlue</td>
+          <td style="color: #fff;background: CadetBlue;">军服蓝</td>
+          <td class="cv">#5F9EA0</td>
+          <td>&nbsp;95, 158, 160</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>ChartReuse</td>
+          <td style="background: ChartReuse;">查特酒绿</td>
+          <td class="cv">#7FFF00</td>
+          <td>127, 255, &nbsp;&nbsp;0</td>
+          <td>一种药酒，诞生于17世纪的法国</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>Chocolate</td>
+          <td style="color: #fff;background: Chocolate;">巧克力色</td>
+          <td class="cv">#D2691E</td>
+          <td>210, 105, &nbsp;30</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>Coral</td>
+          <td style="background: Coral;">珊瑚红</td>
+          <td class="cv">#FF7F50</td>
+          <td>255, 127, &nbsp;80</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>CornFlowerBlue</td>
+          <td style="color: #fff;background: CornFlowerBlue;">矢车菊蓝</td>
+          <td class="cv">#6495ED</td>
+          <td>100, 149, 237</td>
+          <td>矢车菊是德国和马其顿的国花</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>CornSilk</td>
+          <td style="background: CornSilk;">玉米穗黄</td>
+          <td class="cv">#FFF8DC</td>
+          <td>255, 248, 220</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>Crimson</td>
+          <td style="color: #fff;background: Crimson;">绯　红</td>
+          <td class="cv">#DC143C</td>
+          <td>220, &nbsp;20, &nbsp;60</td>
+          <td>较之猩红(Scarlet)蓝色分量要多些</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Cyan/Aqua</td>
+          <td style="background: Cyan;">青　色</td>
+          <td class="cv">#00FFFF</td>
+          <td>&nbsp;&nbsp;0, 255, 255</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>DarkBlue</td>
+          <td style="color: #fff;background: DarkBlue;">深　蓝</td>
+          <td class="cv">#00008B</td>
+          <td>&nbsp;&nbsp;0, &nbsp;&nbsp;0, 139</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>22</td>
+          <td>DarkCyan</td>
+          <td style="color: #fff;background: DarkCyan;">深　青</td>
+          <td class="cv">#008B8B</td>
+          <td>&nbsp;&nbsp;0, 139, 139</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td>DarkGoldenRod</td>
+          <td style="color: #fff;background: DarkGoldenRod;">深金菊黄</td>
+          <td class="cv">#B8860B</td>
+          <td>184, 134, &nbsp;11</td>
+          <td>见“GoldenRod”</td>
+        </tr>
+        <tr>
+          <td>24</td>
+          <td>DarkGray</td>
+          <td style="background: DarkGray;">暗　灰</td>
+          <td class="cv">#A9A9A9</td>
+          <td>169, 169, 169</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>DarkGreen</td>
+          <td style="color: #fff;background: DarkGreen;">深　绿</td>
+          <td class="cv">#006400</td>
+          <td>&nbsp;&nbsp;0, 100, &nbsp;&nbsp;0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>26</td>
+          <td>DarkKhaki</td>
+          <td style="background: DarkKhaki;">深卡其色</td>
+          <td class="cv">#BDB76B</td>
+          <td>189, 183, 107</td>
+          <td>见“Khaki”</td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>DarkMagenta</td>
+          <td style="color: #fff;background: DarkMagenta;">深品红</td>
+          <td class="cv">#8B008B</td>
+          <td>139, &nbsp;&nbsp;0, 139</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>28</td>
+          <td>DarkOliveGreen</td>
+          <td style="color: #fff;background: DarkOliveGreen;">深橄榄绿</td>
+          <td class="cv">#556B2F</td>
+          <td>&nbsp;85, 107, &nbsp;47</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>29</td>
+          <td>DarkOrange</td>
+          <td style="color: #fff;background: DarkOrange;">深　橙</td>
+          <td class="cv">#FF8C00</td>
+          <td>255, 140, &nbsp;&nbsp;0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>DarkOrchid</td>
+          <td style="color: #fff;background: DarkOrchid;">深洋兰紫</td>
+          <td class="cv">#9932CC</td>
+          <td>153, &nbsp;50, 204</td>
+          <td>见“Orchid”</td>
+        </tr>
+        <tr>
+          <td>31</td>
+          <td>DarkRed</td>
+          <td style="color: #fff;background: DarkRed;">深　红</td>
+          <td class="cv">#8B0000</td>
+          <td>139, &nbsp;&nbsp;0, &nbsp;&nbsp;0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>32</td>
+          <td>DarkSalmon</td>
+          <td style="background: DarkSalmon;">深鲑红</td>
+          <td class="cv">#E9967A</td>
+          <td>233, 150, 122</td>
+          <td>见“Salmon”</td>
+        </tr>
+        <tr>
+          <td>33</td>
+          <td>DarkSeaGreen</td>
+          <td style="background: DarkSeaGreen;">深海藻绿</td>
+          <td class="cv">#8FBC8F</td>
+          <td>143, 188, 143</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>34</td>
+          <td>DarkSlateBlue</td>
+          <td style="color: #fff;background: DarkSlateBlue;">深岩蓝</td>
+          <td class="cv">#483D8B</td>
+          <td>&nbsp;72, &nbsp;61, 139</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>35</td>
+          <td>DarkSlateGray</td>
+          <td style="color: #fff;background: DarkSlateGray;">深岩灰</td>
+          <td class="cv">#2F4F4F</td>
+          <td>&nbsp;47, &nbsp;79, &nbsp;79</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>36</td>
+          <td>DarkTurquoise</td>
+          <td style="background: DarkTurquoise;">深松石绿</td>
+          <td class="cv">#00CED1</td>
+          <td>&nbsp;&nbsp;0, 206, 209</td>
+          <td>见“Turquoise”</td>
+        </tr>
+        <tr>
+          <td>37</td>
+          <td>DarkViolet</td>
+          <td style="color: #fff;background: DarkViolet;">深　紫</td>
+          <td class="cv">#9400d3</td>
+          <td>148, &nbsp;&nbsp;0, 211</td>
+          <td>即“深紫罗兰色”，直译名称过长</td>
+        </tr>
+        <tr>
+          <td>38</td>
+          <td>DeepPink</td>
+          <td style="color: #fff;background: DeepPink;">深　粉</td>
+          <td class="cv">#FF1493</td>
+          <td>255, &nbsp;20, 147</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>39</td>
+          <td>DeepSkyBlue</td>
+          <td style="background: DeepSkyBlue;">深天蓝</td>
+          <td class="cv">#00BFFF</td>
+          <td>&nbsp;&nbsp;0, 191, 255</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>40</td>
+          <td>DimGray</td>
+          <td style="color: #fff;background: DimGray;">昏　灰</td>
+          <td class="cv">#696969</td>
+          <td>105, 105, 105</td>
+          <td>是命名颜色中最深的一种灰色</td>
+        </tr>
+        <tr>
+          <td>41</td>
+          <td>DodgerBlue</td>
+          <td style="color: #fff;background: DodgerBlue;">湖　蓝</td>
+          <td class="cv">#1E90FF</td>
+          <td>&nbsp;30, 144, 255</td>
+          <td>洛杉矶道奇棒球队队标的颜色</td>
+        </tr>
+        <tr>
+          <td>42</td>
+          <td>FireBrick</td>
+          <td style="color: #fff;background: FireBrick;">火砖红</td>
+          <td class="cv">#B22222</td>
+          <td>178, &nbsp;34, &nbsp;34</td>
+          <td>耐火砖的颜色比普通红砖要深</td>
+        </tr>
+        <tr>
+          <td>43</td>
+          <td>FloralWhite</td>
+          <td style="background: FloralWhite;">花卉白</td>
+          <td class="cv">#FFFAF0</td>
+          <td>255, 250, 240</td>
+          <td>不可简称“花白”(后者与斑白同义)</td>
+        </tr>
+        <tr>
+          <td>44</td>
+          <td>ForestGreen</td>
+          <td style="color: #fff;background: ForestGreen;">森林绿</td>
+          <td class="cv">#228B22</td>
+          <td>&nbsp;34, 139, &nbsp;34</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>45</td>
+          <td>GainsBoro</td>
+          <td style="background: GainsBoro;">庚氏灰</td>
+          <td class="cv">#DCDCDC</td>
+          <td>220, 220, 220</td>
+          <td>托马斯·庚斯博罗，18世纪英国画家</td>
+        </tr>
+        <tr>
+          <td>46</td>
+          <td>GhostWhite</td>
+          <td style="background: GhostWhite;">幽灵白</td>
+          <td class="cv">#F8F8FF</td>
+          <td>248, 248, 255</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>47</td>
+          <td>GoldenRod</td>
+          <td style="background: GoldenRod;">金菊黄</td>
+          <td class="cv">#DAA520</td>
+          <td>218, 165, &nbsp;32</td>
+          <td>一枝黄花，一种菊科花卉</td>
+        </tr>
+        <tr>
+          <td>48</td>
+          <td>Gray</td>
+          <td style="color: #fff;background: Gray;">灰　色</td>
+          <td class="cv">#808080</td>
+          <td>128, 128, 128</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>49</td>
+          <td>Green</td>
+          <td style="color: #fff;background: Green;">调和绿</td>
+          <td class="cv">#008000</td>
+          <td>&nbsp;&nbsp;0, 128, &nbsp;&nbsp;0</td>
+          <td>视觉上的正绿色</td>
+        </tr>
+        <tr>
+          <td>50</td>
+          <td>GreenYellow</td>
+          <td style="background: GreenYellow;">黄绿色</td>
+          <td class="cv">#ADFF2F</td>
+          <td>173, 255, 47</td>
+          <td>请注意与YellowGreen区分</td>
+        </tr>
+        <tr>
+          <td>51</td>
+          <td>HoneyDew</td>
+          <td style="background: HoneyDew;">蜜瓜绿</td>
+          <td class="cv">#F0FFF0</td>
+          <td>240, 255, 240</td>
+          <td>Honeydew即白兰瓜、蜜瓜</td>
+        </tr>
+        <tr>
+          <td>52</td>
+          <td>HotPink</td>
+          <td style="background: HotPink;">艳　粉</td>
+          <td class="cv">#FF69B4</td>
+          <td>255, 105, 180</td>
+          <td>不是暖粉，后者应是偏黄的粉色</td>
+        </tr>
+        <tr>
+          <td>53</td>
+          <td>IndianRed</td>
+          <td style="color: #fff;background: IndianRed;">印度红</td>
+          <td class="cv">#CD5C5C</td>
+          <td>205, &nbsp;92, &nbsp;92</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>54</td>
+          <td>Indigo</td>
+          <td style="color: #fff;background: Indigo;">靛　蓝</td>
+          <td class="cv">#4B0082</td>
+          <td>&nbsp;75, &nbsp;&nbsp;0, 130</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>55</td>
+          <td>Ivory</td>
+          <td style="background: Ivory;">象牙白</td>
+          <td class="cv">#FFFFF0</td>
+          <td>255, 255, 240</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>56</td>
+          <td>Khaki</td>
+          <td style="background: Khaki;">卡其色</td>
+          <td class="cv">#F0E68C</td>
+          <td>240, 230, 140</td>
+          <td>Khaki是一种布料的名称</td>
+        </tr>
+        <tr>
+          <td>57</td>
+          <td>Lavender</td>
+          <td style="background: Lavender;">薰衣草紫</td>
+          <td class="cv">#E6E6FA</td>
+          <td>230, 230, 250</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>58</td>
+          <td>LavenderBlush</td>
+          <td style="background: LavenderBlush;">薰衣草红</td>
+          <td class="cv">#FFF0F5</td>
+          <td>255, 240, 245</td>
+          <td>“薰衣草紫红色”的简略</td>
+        </tr>
+        <tr>
+          <td>59</td>
+          <td>LawnGreen</td>
+          <td style="background: LawnGreen;">草坪绿</td>
+          <td class="cv">#7CFC00</td>
+          <td>124, 252, &nbsp;&nbsp;0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>60</td>
+          <td>LemonChiffon</td>
+          <td style="background: LemonChiffon;">柠檬绸黄</td>
+          <td class="cv">#FFFACD</td>
+          <td>255, 250, 205</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>61</td>
+          <td>LightBlue</td>
+          <td style="background: LightBlue;">浅　蓝</td>
+          <td class="cv">#ADD8E6</td>
+          <td>173, 216, 230</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>62</td>
+          <td>LightCoral</td>
+          <td style="background: LightCoral;">浅珊瑚红</td>
+          <td class="cv">#F08080</td>
+          <td>240, 128, 128</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>63</td>
+          <td>LightCyan</td>
+          <td style="background: LightCyan;">浅　青</td>
+          <td class="cv">#E0FFFF</td>
+          <td>224, 255, 255</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>64</td>
+          <td>LightGoldenRodYellow</td>
+          <td style="background: LightGoldenRodYellow;">浅金菊黄</td>
+          <td class="cv">#FAFAD2</td>
+          <td>250, 250, 210</td>
+          <td>见“GoldenRod”</td>
+        </tr>
+        <tr>
+          <td>65</td>
+          <td>LightGray</td>
+          <td style="background: LightGray;">亮　灰</td>
+          <td class="cv">#D3D3D3</td>
+          <td>211, 211, 211</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>66</td>
+          <td>LightGreen</td>
+          <td style="background: LightGreen;">浅　绿</td>
+          <td class="cv">#90EE90</td>
+          <td>144, 238, 144</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>67</td>
+          <td>LightPink</td>
+          <td style="background: LightPink;">浅　粉</td>
+          <td class="cv">#FFB6C1</td>
+          <td>255, 182, 193</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>68</td>
+          <td>LightSalmon</td>
+          <td style="background: LightSalmon;">浅鲑红</td>
+          <td class="cv">#FFA07A</td>
+          <td>255, 160, 122</td>
+          <td>见“Salmon”</td>
+        </tr>
+        <tr>
+          <td>69</td>
+          <td>LightSeaGreen</td>
+          <td style="background: LightSeaGreen;">浅海藻绿</td>
+          <td class="cv">#20B2AA</td>
+          <td>&nbsp;32, 178, 170</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>70</td>
+          <td>LightSkyBlue</td>
+          <td style="background: LightSkyBlue;">浅天蓝</td>
+          <td class="cv">#87CEFA</td>
+          <td>135, 206, 250</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>71</td>
+          <td>LightSlateGray</td>
+          <td style="background: LightSlateGray;">浅岩灰</td>
+          <td class="cv">#778899</td>
+          <td>119, 136, 153</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>72</td>
+          <td>LightSteelBlue</td>
+          <td style="background: #b0c4de;">浅钢青</td>
+          <td class="cv">#B0C4DE</td>
+          <td>176, 196, 222</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>73</td>
+          <td>LightYellow</td>
+          <td style="background: LightYellow;">浅　黄</td>
+          <td class="cv">#FFFFE0</td>
+          <td>255, 255, 224</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>74</td>
+          <td>Lime</td>
+          <td style="background: Lime;">绿　色</td>
+          <td class="cv">#00FF00</td>
+          <td>&nbsp;&nbsp;0, 255, &nbsp;&nbsp;0</td>
+          <td>RGB颜色空间的正绿色</td>
+        </tr>
+        <tr>
+          <td>75</td>
+          <td>LimeGreen</td>
+          <td style="background: LimeGreen;">青柠绿</td>
+          <td class="cv">#32CD32</td>
+          <td>&nbsp;50, 205, &nbsp;50</td>
+          <td>Lime是青柠，Lemon才是柠檬</td>
+        </tr>
+        <tr>
+          <td>76</td>
+          <td>Linen</td>
+          <td style="background: Linen;">亚麻色</td>
+          <td class="cv">#FAF0E6</td>
+          <td>250, 240, 230</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>77</td>
+          <td>Magenta/Fuchsia</td>
+          <td style="color: #fff;background: Magenta;">洋　红</td>
+          <td class="cv">#FF00FF</td>
+          <td>255, &nbsp;&nbsp;0, 255</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>78</td>
+          <td>Maroon</td>
+          <td style="color: #fff;background: Maroon;">栗　色</td>
+          <td class="cv">#800000</td>
+          <td>128, &nbsp;&nbsp;0, &nbsp;&nbsp;0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>79</td>
+          <td>MediumAquaMarine</td>
+          <td style="background: MediumAquaMarine;">中碧绿</td>
+          <td class="cv">#66CDAA</td>
+          <td>102, 205, 170</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>80</td>
+          <td>MediumBlue</td>
+          <td style="color: #fff;background: MediumBlue;">中　蓝</td>
+          <td class="cv">#0000CD</td>
+          <td>&nbsp;&nbsp;0, &nbsp;&nbsp;0, 205</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>81</td>
+          <td>MediumOrchid</td>
+          <td style="color: #fff;background: MediumOrchid;">中洋兰紫</td>
+          <td class="cv">#BA55D3</td>
+          <td>186, &nbsp;85, 211</td>
+          <td>见“Orchid”</td>
+        </tr>
+        <tr>
+          <td>82</td>
+          <td>MediumPurple</td>
+          <td style="color: #fff;background: MediumPurple;">中　紫</td>
+          <td class="cv">#9370D8</td>
+          <td>147, 112, 219</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>83</td>
+          <td>MediumSeaGreen</td>
+          <td style="background: MediumSeaGreen;">中海藻绿</td>
+          <td class="cv">#3CB371</td>
+          <td>&nbsp;60, 179, 113</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>84</td>
+          <td>MediumSlateBlue</td>
+          <td style="color: #fff;background: MediumSlateBlue;">中岩蓝</td>
+          <td class="cv">#7B68EE</td>
+          <td>123, 104, 238</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>85</td>
+          <td>MediumSpringGreen</td>
+          <td style="background: MediumSpringGreen;">中嫩绿</td>
+          <td class="cv">#00FA9A</td>
+          <td>&nbsp;&nbsp;0, 250, 154</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>86</td>
+          <td>MediumTurquoise</td>
+          <td style="background: MediumTurquoise;">中松石绿</td>
+          <td class="cv">#48D1CC</td>
+          <td>&nbsp;72, 209, 204</td>
+          <td>见“Turquoise”</td>
+        </tr>
+        <tr>
+          <td>87</td>
+          <td>MediumVioletRed</td>
+          <td style="color: #fff;background: MediumVioletRed;">中紫红</td>
+          <td class="cv">#C71585</td>
+          <td>199, &nbsp;21, 133</td>
+          <td>“中紫罗兰红”，直译名称过长</td>
+        </tr>
+        <tr>
+          <td>88</td>
+          <td>MidNightBlue</td>
+          <td style="color: #fff;background: MidNightBlue;">午夜蓝</td>
+          <td class="cv">#191970</td>
+          <td>&nbsp;25, &nbsp;25, 112</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>89</td>
+          <td>MintCream</td>
+          <td style="background: MintCream;">薄荷乳白</td>
+          <td class="cv">#F5FFFA</td>
+          <td>245, 255, 250</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>90</td>
+          <td>MistyRose</td>
+          <td style="background: MistyRose;">雾玫瑰红</td>
+          <td class="cv">#FFE4E1</td>
+          <td>255, 228, 225</td>
+          <td>薄雾玫瑰，玫瑰品种之一</td>
+        </tr>
+        <tr>
+          <td>91</td>
+          <td>Moccasin</td>
+          <td style="background: Moccasin;">鹿皮色</td>
+          <td class="cv">#FFE4B5</td>
+          <td>255, 228, 181</td>
+          <td>Moccasin本意为鹿皮鞋</td>
+        </tr>
+        <tr>
+          <td>92</td>
+          <td>NavajoWhite</td>
+          <td style="background: NavajoWhite;">土著白</td>
+          <td class="cv">#FFDEAD</td>
+          <td>255, 222, 173</td>
+          <td>纳瓦霍(Navajo)是北美印第安人的一支</td>
+        </tr>
+        <tr>
+          <td>93</td>
+          <td>Navy</td>
+          <td style="color: #fff;background: Navy;">藏　青</td>
+          <td class="cv">#000080</td>
+          <td>&nbsp;&nbsp;0, &nbsp;&nbsp;0, 128</td>
+          <td>美国海军军服的颜色，Navy意为海军</td>
+        </tr>
+        <tr>
+          <td>94</td>
+          <td>OldLace</td>
+          <td style="background: OldLace;">旧蕾丝白</td>
+          <td class="cv">#FDF5E6</td>
+          <td>253, 245, 230</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>95</td>
+          <td>Olive</td>
+          <td style="color: #fff;background: Olive;">橄榄色</td>
+          <td class="cv">#808000</td>
+          <td>128, 128, &nbsp;&nbsp;0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>96</td>
+          <td>OliveDrab</td>
+          <td style="color: #fff;background: OliveDrab;">橄榄绿</td>
+          <td class="cv">#6B8E23</td>
+          <td>107, 142, &nbsp;35</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>97</td>
+          <td>Orange</td>
+          <td style="background: Orange;">橙　色</td>
+          <td class="cv">#FFA500</td>
+          <td>255, 165, &nbsp;&nbsp;0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>98</td>
+          <td>OrangeRed</td>
+          <td style="color: #fff;background: OrangeRed;">橘　红</td>
+          <td class="cv">#FF4500</td>
+          <td>255, &nbsp;69, &nbsp;&nbsp;0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>99</td>
+          <td>Orchid</td>
+          <td style="color: #fff;background: Orchid;">洋兰紫</td>
+          <td class="cv">#DA70D6</td>
+          <td>218, 112, 214</td>
+          <td>西洋兰花某品种的颜色</td>
+        </tr>
+        <tr>
+          <td>100</td>
+          <td>PaleGoldenRod</td>
+          <td style="background: PaleGoldenRod;">白金菊黄</td>
+          <td class="cv">#EEE8AA</td>
+          <td>238, 232, 170</td>
+          <td>见“GoldenRod”</td>
+        </tr>
+        <tr>
+          <td>101</td>
+          <td>PaleGreen</td>
+          <td style="background: PaleGreen;">白绿色</td>
+          <td class="cv">#98FB98</td>
+          <td>152, 251, 152</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>PaleTurquoise</td>
+          <td style="background: PaleTurquoise;">白松石绿</td>
+          <td class="cv">#AFEEEE</td>
+          <td>175, 238, 238</td>
+          <td>见“Turquoise”</td>
+        </tr>
+        <tr>
+          <td>103</td>
+          <td>PaleVioletRed</td>
+          <td style="color: #fff;background: PaleVioletRed;">白紫红</td>
+          <td class="cv">#D87093</td>
+          <td>219, 112, 147</td>
+          <td>“白紫罗兰红色”的简略</td>
+        </tr>
+        <tr>
+          <td>104</td>
+          <td>PapayaWhip</td>
+          <td style="background: PapayaWhip;">番木瓜橙</td>
+          <td class="cv">#FFEFD5</td>
+          <td>255, 239, 213</td>
+          <td>本意为番木瓜(一种热带水果)汁</td>
+        </tr>
+        <tr>
+          <td>105</td>
+          <td>PeachPuff</td>
+          <td style="background: PeachPuff;">粉扑桃色</td>
+          <td class="cv">#FFDAB9</td>
+          <td>255, 218, 185</td>
+          <td>Peach是桃，Puff是化妆用的粉扑</td>
+        </tr>
+        <tr>
+          <td>106</td>
+          <td>Peru</td>
+          <td style="color: #fff;background: Peru;">秘鲁红</td>
+          <td class="cv">#CD853F</td>
+          <td>205, 133, &nbsp;63</td>
+          <td>从秘鲁国树金鸡纳树中提炼的一种颜料</td>
+        </tr>
+        <tr>
+          <td>107</td>
+          <td>Pink</td>
+          <td style="background: Pink;">粉　色</td>
+          <td class="cv">#FFC0CB</td>
+          <td>255, 192, 203</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>108</td>
+          <td>Plum</td>
+          <td style="background: Plum;">李　紫</td>
+          <td class="cv">#DDA0DD</td>
+          <td>221, 160, 221</td>
+          <td>Plum意为李子、梅子</td>
+        </tr>
+        <tr>
+          <td>109</td>
+          <td>PowderBlue</td>
+          <td style="background: PowderBlue;">粉末蓝</td>
+          <td class="cv">#B0E0E6</td>
+          <td>176, 224, 230</td>
+          <td>得名自洗衣店用来漂染衣物的物质大青</td>
+        </tr>
+        <tr>
+          <td>110</td>
+          <td>Purple</td>
+          <td style="color: #fff;background: Purple;">紫　色</td>
+          <td class="cv">#800080</td>
+          <td>128, &nbsp;&nbsp;0, 128</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>111</td>
+          <td>Red</td>
+          <td style="color: #fff;background: Red;">红　色</td>
+          <td class="cv">#FF0000</td>
+          <td>255, &nbsp;&nbsp;0, &nbsp;&nbsp;0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>112</td>
+          <td>RosyBrown</td>
+          <td style="background: RosyBrown;">玫瑰褐</td>
+          <td class="cv">#BC8F8F</td>
+          <td>188, 143, 143</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>113</td>
+          <td>RoyalBlue</td>
+          <td style="color: #fff;background: RoyalBlue;">品　蓝</td>
+          <td class="cv">#4169E1</td>
+          <td>&nbsp;65, 105, 225</td>
+          <td>直译为“皇家蓝”</td>
+        </tr>
+        <tr>
+          <td>114</td>
+          <td>SaddleBrown</td>
+          <td style="color: #fff;background: SaddleBrown;">鞍　褐</td>
+          <td class="cv">#8B4513</td>
+          <td>139, &nbsp;69, &nbsp;19</td>
+          <td>亦作“马鞍棕”，马鞍常见的颜色</td>
+        </tr>
+        <tr>
+          <td>115</td>
+          <td>Salmon</td>
+          <td style="background: Salmon;">鲑　红</td>
+          <td class="cv">#FA8072</td>
+          <td>250, 128, 114</td>
+          <td>本意为三文鱼，一种鲑科冷水鱼类</td>
+        </tr>
+        <tr>
+          <td>116</td>
+          <td>SandyBrown</td>
+          <td style="background: SandyBrown;">沙　褐</td>
+          <td class="cv">#F4A460</td>
+          <td>244, 164, &nbsp;96</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>117</td>
+          <td>SeaGreen</td>
+          <td style="color: #fff;background: SeaGreen;">海藻绿</td>
+          <td class="cv">#2E8B57</td>
+          <td>&nbsp;46, 139, &nbsp;87</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>118</td>
+          <td>SeaShell</td>
+          <td style="background: SeaShell;">贝壳白</td>
+          <td class="cv">#FFF5EE</td>
+          <td>255, 245, 238</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>119</td>
+          <td>Sienna</td>
+          <td style="color: #fff;background: Sienna;">土黄赭</td>
+          <td class="cv">#A0522D</td>
+          <td>160, &nbsp;82, &nbsp;45</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>120</td>
+          <td>Silver</td>
+          <td style="background: Silver;">银　色</td>
+          <td class="cv">#C0C0C0</td>
+          <td>192, 192, 192</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>121</td>
+          <td>SkyBlue</td>
+          <td style="background: SkyBlue;">天　蓝</td>
+          <td class="cv">#87CEEB</td>
+          <td>135, 206, 235</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>122</td>
+          <td>SlateBlue</td>
+          <td style="color: #fff;background: SlateBlue;">岩　蓝</td>
+          <td class="cv">#6A5ACD</td>
+          <td>106, &nbsp;90, 205</td>
+          <td>Slate本意为“板岩”</td>
+        </tr>
+        <tr>
+          <td>123</td>
+          <td>SlateGray</td>
+          <td style="color: #fff;background: SlateGray;">岩　灰</td>
+          <td class="cv">#708090</td>
+          <td>112, 128, 144</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>124</td>
+          <td>Snow</td>
+          <td style="background: Snow;">雪　白</td>
+          <td class="cv">#FFFAFA</td>
+          <td>255, 250, 250</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>125</td>
+          <td>SpringGreen</td>
+          <td style="background: SpringGreen;">春　绿</td>
+          <td class="cv">#00FF7F</td>
+          <td>&nbsp;&nbsp;0, 255, 127</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>126</td>
+          <td>SteelBlue</td>
+          <td style="color: #fff;background: SteelBlue;">钢　青</td>
+          <td class="cv">#4682B4</td>
+          <td>&nbsp;70, 130, 180</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>127</td>
+          <td>Tan</td>
+          <td style="background: Tan;">日晒褐</td>
+          <td class="cv">#D2B48C</td>
+          <td>210, 180, 140</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>128</td>
+          <td>Teal</td>
+          <td style="color: #fff;background: Teal;">鸭翅绿</td>
+          <td class="cv">#008080</td>
+          <td>&nbsp;&nbsp;0, 128, 128</td>
+          <td>Teal意为绿翅鸭，一种水鸭</td>
+        </tr>
+        <tr>
+          <td>129</td>
+          <td>Thistle</td>
+          <td style="background: Thistle;">蓟　紫</td>
+          <td class="cv">#D8BFD8</td>
+          <td>216, 191, 216</td>
+          <td>菊科蓟属，多刺花卉，旧时苏格兰国花</td>
+        </tr>
+        <tr>
+          <td>130</td>
+          <td>Tomato</td>
+          <td style="background: Tomato;">番茄红</td>
+          <td class="cv">#FF6347</td>
+          <td>255, &nbsp;99, &nbsp;71</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>131</td>
+          <td>Turquoise</td>
+          <td style="background: Turquoise;">松石绿</td>
+          <td class="cv">#40E0D0</td>
+          <td>&nbsp;64, 224, 208</td>
+          <td>本意为土耳其石即绿松石，一种宝石</td>
+        </tr>
+        <tr>
+          <td>132</td>
+          <td>Violet</td>
+          <td style="background: Violet;">紫罗兰色</td>
+          <td class="cv">#EE82EE</td>
+          <td>238, 130, 238</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>133</td>
+          <td>Wheat</td>
+          <td style="background: Wheat;">麦　色</td>
+          <td class="cv">#F5DEB3</td>
+          <td>245, 222, 179</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>134</td>
+          <td>White</td>
+          <td style="background: White;">白　色</td>
+          <td class="cv">#FFFFFF</td>
+          <td>255, 255, 255</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>135</td>
+          <td>WhiteSmoke</td>
+          <td style="background: WhiteSmoke;">烟雾白</td>
+          <td class="cv">#F5F5F5</td>
+          <td>245, 245, 245</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>136</td>
+          <td>Yellow</td>
+          <td style="background: Yellow;">黄　色</td>
+          <td class="cv">#FFFF00</td>
+          <td>255, 255, &nbsp;&nbsp;0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>137</td>
+          <td>YellowGreen</td>
+          <td style="background: YellowGreen;">暗黄绿色</td>
+          <td class="cv">#9ACD32</td>
+          <td>154, 205, &nbsp;50</td>
+          <td>注意与GreenYellow区分</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="copy">&copy;Spark System Studio, 1995-2019</div>
+    <script src="js/run.js"></script>
+  </body>
+</html>

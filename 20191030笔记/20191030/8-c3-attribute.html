@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS3</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .code {
+        font-family: Consolas;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .list {
+        font-size: 24px;
+      }
+      .list li[name] {
+        color: green;
+      }
+      .list li[name=bravo] {
+        color: red;
+      }
+      .list li[name*=a] {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS 样式表 3</h1>
+    <h2>伪选择器</h2>
+    <!-- parent tag -->
+    <ol class="list">
+      <!-- child tag -->
+      <li name="alpha">Alpha</li>
+      <li name="bravo">Bravo</li>
+      <li name="delta">Delta</li>
+      <li name="echo">Echo</li>
+      <li name="foxtrot">Foxtrot</li>
+      <li name="hotel">Hotel</li>
+      <li>Juliet</li>
+      <li>Kilo</li>
+    </ol>
+  </body>
+  </html>

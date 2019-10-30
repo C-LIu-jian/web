@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS3</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 外链式，内联式，import 引用，嵌入式 -->
+    <style>
+      .code {
+        font-family: Consolas;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .box {
+        margin: 10px;
+        padding: 15px;
+        /* width: 100%; */
+        background: #3cf;
+        display: block;
+        /* block:  margin, width, padding */
+      }
+      span {
+        margin-bottom: 10px;
+        margin-right: 10px;
+        padding: 20px;
+        background: #ccc;
+      }
+      div {
+        width: 200px;
+        background: #396;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS 样式表 3</h1>
+    <h2>显示模式属性 display</h2>
+    <div class="box">Box</div>
+    <span>A</span>
+    <span>B</span>
+    <span>C</span>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <h3>属性值：</h3>
+    <pre class="code">
+{
+    display: block;        /* 块 模式 */
+    display: inline;       /* 行内 模式 */
+    display: inline-block; /* 行内块 模式 */
+    display: none;         /* 隐藏 */
+}
+    </pre>
+  </body>
+</html>

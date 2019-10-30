@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS3</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 外链式，内联式，import 引用，嵌入式 -->
+    <style>
+      .code {
+        font-family: Consolas;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .box {
+        margin: 10px;
+        padding: 15px;
+        /* width: 100%; */
+        background: #3cf;
+        display: block;
+        /* block:  margin, width, padding */
+      }
+      .menu {
+        /* width: 100px; */
+        padding: 4px 10px;
+        display: inline-block;
+        background: #ccc;
+      }
+      .menu li {
+        display: inline-block;
+      }
+      .menu .item {
+        display: none;
+      }
+      /* 伪选择器 : */
+      /* :hover */
+      .menu:hover {
+        color: yellow;
+        background: #000;
+      }
+      .menu:hover .item {
+        display: inline-block;
+      }
+      .menu:hover .show {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS 样式表 3</h1>
+    <h2>显示模式属性 display</h2>
+    <ul class="menu">
+      <li class="show">M</li>
+      <li class="item">主页</li>
+      <li class="item">论坛</li>
+    </ul>
+    <h3>属性值：</h3>
+    <pre class="code">
+{
+    display: block;        /* 块 模式 */
+    display: inline;       /* 行内 模式 */
+    display: inline-block; /* 行内块 模式 */
+    display: none;         /* 隐藏 */
+}
+    </pre>
+  </body>
+</html>

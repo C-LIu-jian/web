@@ -1,0 +1,194 @@
+/**
+ * 网页色彩演示样式表
+ * @SparkSystemStudio 2019
+ * tonylinx@qq.com
+ */
+
+body {
+  margin: 0;
+  padding: 72px 10px;
+  font-family: Consolas;
+  font-size: 14px;
+}
+.cart {
+  margin: 0;
+  padding: 10px 20px 16px;
+  height: 40px;
+  color: #fff;
+  font-size: 32px;
+  text-shadow: 1px 2px 3px black;
+  background: #36c;
+  background-image: linear-gradient(#36c, #39f, #36c);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+}
+.cart .one {
+  cursor: pointer;
+}
+.one sub {
+  margin-top: 6px;
+  color: #fff;
+  font-size: 30px;
+  display: inline-block;
+  position: relative;
+  display: none;
+}
+.one sub::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.one sub .txt {
+  float: left;
+  margin-right: 20px;
+}
+.one sub .hex,
+.one sub .sht {
+  float: left;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+.cart .ins {
+  position: absolute;
+  top: calc(50% - 20px);
+  right: 20px;
+  font-size: 28px;
+  display: none;
+}
+.cart .ins * {
+  display: inline-block;
+}
+.cart .ins i {
+  font-style: normal;
+}
+.cart .ins input {
+  margin-top: 6px;
+  padding: 4px 8px;
+  width: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+.cart .ins .red {
+  background: #f00;
+}
+.cart .ins .green {
+  background: #0c0;
+}
+.cart .ins .blue {
+  background: #00f;
+}
+.list {
+  padding-left: 50px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.list li {
+  margin: 20px 0;
+}
+.list li ul {
+  margin-top: 10px;
+}
+.list li ul li {
+  margin: 0;
+}
+.list li img {
+  max-width: 480px;
+  display: none;
+}
+.list li:hover img {
+  display: block;
+}
+.colors {
+  margin: 10px;
+  overflow: hidden;
+}
+.colors::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.colors .color {
+  float: left;
+  padding: 4px 8px;
+  font-size: 16px;
+}
+.group {
+  width: 100%;
+  display: block;
+}
+.group::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.group .item {
+  float: left;
+  width: 25%;
+  height: 72px;
+  position: relative;
+}
+.group .item strong {
+  font-size: 22px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.w {
+  color: #fff;
+}
+.table {
+  margin: 20px;
+  width: calc(100% - 40px);
+  font-size: 14px;
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+.table thead tr {
+  background: #ccc;
+}
+.table thead tr th {
+  padding: 6px 12px;
+  text-align: left;
+  border: 1px solid #000;
+}
+.table tbody tr td {
+  padding: 4px 8px;
+  border: 1px solid #000;
+  white-space: nowrap;
+}
+.table thead tr th:nth-child(1),
+.table thead tr th:nth-child(3),
+.table thead tr th:nth-child(4),
+.table thead tr th:nth-child(5),
+.table tbody tr td:nth-child(1),
+.table tbody tr td:nth-child(3),
+.table tbody tr td:nth-child(4),
+.table tbody tr td:nth-child(5) {
+  text-align: center;
+}
+.cv {
+  color: #000;
+  background: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.copy {
+  padding: 10px 20px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 1px #ccc;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
