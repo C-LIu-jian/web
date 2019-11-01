@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>位置和次序</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+    }
+    body {
+        margin: 0 5px;
+    }
+    .code {
+        margin: 10px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: blue;
+    }
+    </style>
+</head>
+<body>
+    <h1>position &amp; z-index</h1>
+    <pre class="code">
+{
+    position: static;   /* 静态，默认值 */
+    position: relative; /* 相对位置 */
+    position: absolute; /* 绝对位置 */
+    position: fixed;    /* 静止 */
+    z-index: 0;         /* Z轴次序，默认0 */
+}
+    </pre>
+    <style>
+        .wrap {
+            width: 300px;
+            height: 300px;
+            background: #ccc;
+            position: relative;
+            /* z-index: -2; */
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+        .box.p1 {
+            background: #c00;
+            position: relative;
+            top: 120px;
+            left: 70px;
+            z-index: 1;
+        }
+        .box.p2 {
+            background: #090;
+            position: absolute;
+            right: -50px;
+            /* bottom: 50px; */
+            z-index: -1;
+        }
+        .box.p3 {
+            background: #00c;
+            position: relative;
+            left: 100px;
+            /* z-index: -1; */
+        }
+    </style>
+    <div class="wrap">
+        <div class="box p1"></div>
+        <div class="box p2"></div>
+        <div class="box p3"></div>
+    </div>
+</body>
+</html>

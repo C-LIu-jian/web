@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="db.properties">
+        <property name="org.apache.ibatis.parsing.PropertyParser.enable-default-value" value="true"/> <!-- 启用默认值特性 -->
+        <property name="org.apache.ibatis.parsing.PropertyParser.default-value-separator" value="-"/> <!-- 修改默认值的分隔符 -->
+    </properties><!--加载资源属性文件-->
+    
+    <settings>
+        <!--开启驼峰命名规则-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <typeAliases>
+        <!--<typeAlias type="com.crazycode.pojo.Teacher" alias="teacher"></typeAlias>-->
+        <!--扫描指定包中或其子包下的所类,给这些类设置别名,别名就是类名(首字母小写),别名是不区分大小写的-->
+        <package name="com.crazycode.pojo"/>
+
+    </typeAliases>
+
+    <typeHandlers>
+        <typeHandler handler="com.crazycode.typehandler.StringToIntHandler"/>
+    </typeHandlers>
+    <!--配置程序的运行环境,可以1到多个-->
+    <environments default="development">
+        <environment id="development">
+            <!--配置事务管理器来支持事务的处理,默认jdbc事务处理-->
+            <transactionManager type="JDBC"/>
+            <!--配置数据源连接池-->
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password-root}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--加载sql映射文件-->
+    <mappers>
+        <mapper resource="StudentMapper.xml"/>
+        <mapper resource="TeacherMapper.xml"/>
+    </mappers>
+</configuration>

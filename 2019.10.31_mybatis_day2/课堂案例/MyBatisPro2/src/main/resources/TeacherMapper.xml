@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间+ id 名字来确定唯一的sql语句-->
+<mapper namespace="com.crazycode.mapper.TeacherMapper">
+    <!--<select id="findAllTeachers" resultType="com.crazycode.pojo.Teacher" >
+       select id,t_name as tName,sex,birthday from teacher
+   </select>-->
+
+    <select id="findAllTeachers" resultType="teacher">
+       select id,t_name,sex,birthday from teacher
+   </select>
+
+   <!-- <resultMap id="teacher_map" type="com.crazycode.pojo.Teacher">
+        &lt;!&ndash;手动指定封装的细节&ndash;&gt;
+        &lt;!&ndash;主键封装&ndash;&gt;
+        <id property="id" column="id"></id>
+        &lt;!&ndash;普通属性的封装&ndash;&gt;
+        <result property="tName" column="t_name"></result>
+        <result property="birthday" column="birthday"></result>
+        <result property="sex" column="sex"></result>
+    </resultMap>-->
+
+
+</mapper>

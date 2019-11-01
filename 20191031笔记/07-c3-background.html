@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3 background</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+    }
+    body {
+        margin: 0 5px;
+    }
+    .code {
+        margin: 10px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: blue;
+    }
+    </style>
+</head>
+<body>
+    <h1>CSS3 background</h1>
+    <pre class="code">
+{
+    background-image: url(imgs/bg.jpg);
+    background-position: 0 0;
+    background-attachment: scroll;
+    background-repeat: repeat;
+    background-color: color;
+    background: image position attach repeat color;
+    background-size: auto auto;    /* H5 */
+    background-origin: border-box; /* H5 */
+    background-clip: border-box;   /* H5 */
+    background: image position attach repeat color / size origin clip;
+}
+    </pre>
+    <style>
+        .wrap {
+            width: 300px;
+            height: 300px;
+            background: #ccc;
+            position: relative;
+        }
+        .box {
+            width: 260px;
+            height: 220px;
+            padding: 30px;
+            font-size: 16px;
+            border: 30px solid #00000080;
+            background: #999;
+            background-image: url(imgs/1234.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: scroll; /* 背景固定 */
+            background-attachment: local;  /* 文本固定 */
+            background-attachment: fixed;  /* 对齐 body */
+            /* background-size: cover; */
+            /* background-origin: border-box; */
+            /* background-clip: content-box; */
+            /* visibility: hidden; */
+            /* display: none; */
+            overflow: scroll;
+            overflow: auto;
+            /* overflow: visible; */
+            overflow: hidden;
+        }
+        .box:hover {
+            position: relative;
+            top: -100px;
+            left: 150px;
+        }
+    </style>
+    <!-- <div class="wrap"> -->
+    <div class="box">
+        <!-- <img src="imgs/p1.jpg" alt=""> -->
+        <p>让帅定轻玉雷言惊气解先朗为都罪冒况，同逃专郭蒲那动当听唯，打就别当为有同到三，在脱秦场关服人骂言友听丹关由帝是，不得徒成里，着行才夫小临师死说的郭非小国同生卅笔将，我都自韩洪玉杨感找大家，的太心帅她白肯商两沫量自李君略当皇，名考前，主天入俭关先感国策，愿。</p>
+        <p>让帅定轻玉雷言惊气解先朗为都罪冒况，同逃专郭蒲那动当听唯，打就别当为有同到三，在脱秦场关服人骂言友听丹关由帝是，不得徒成里，着行才夫小临师死说的郭非小国同生卅笔将，我都自韩洪玉杨感找大家，的太心帅她白肯商两沫量自李君略当皇，名考前，主天入俭关先感国策，愿。</p>
+        <p>让帅定轻玉雷言惊气解先朗为都罪冒况，同逃专郭蒲那动当听唯，打就别当为有同到三，在脱秦场关服人骂言友听丹关由帝是，不得徒成里，着行才夫小临师死说的郭非小国同生卅笔将，我都自韩洪玉杨感找大家，的太心帅她白肯商两沫量自李君略当皇，名考前，主天入俭关先感国策，愿。</p>
+    </div>
+    <!-- </div> -->
+    <!-- <p>样意反资量太畴使不遗魂也见生不修逝打怒，负留其反春韦下卅老智光得仁世当他分路，愚死毒的专命如松到非非杀磊不找，为乡看他一杨曾不后策老张勇，皇绛皇许都之极览予导，宋气求藏王了话考的仍君想，当死我了统训航甲等五生么事到相别仃虑先，应洪说诗王价姑人韩何完徒，才。</p> -->
+    <p>&nbsp;</p>
+</body>
+</html>

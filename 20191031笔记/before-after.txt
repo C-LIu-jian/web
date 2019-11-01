@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS3</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Reset */
+      /* * {
+        margin: 0;
+        padding: 0;
+      } */
+      .code {
+        font-family: Consolas;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .list {
+        border: 1px solid blue;
+      }
+      /* .list li::before {
+        content: 'Before';
+        display: block;
+        background: #090;
+      } */
+      .list li::after {
+        margin-left: 30px;
+        padding: 10px 12px;
+        content: attr(name);
+        /* content: ''; */
+        display: none;
+        color: #fff;
+        background: #f00;
+        text-transform: capitalize;
+      }
+      .list li:hover::after {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS 样式表 3</h1>
+    <h2>虚拟对象伪选择器</h2>
+    <h2>::before, ::after</h2>
+    <!-- parent tag -->
+    <ol class="list">
+      <!-- child tag -->
+      <li name="alpha">A</li>
+      <li name="bravo">B</li>
+      <li name="delta">D</li>
+      <li name="echo">E</li>
+      <li name="foxtrot">F</li>
+      <li name="hotel">H</li>
+      <li name="Juliet">J</li>
+      <li name="Kilo">K</li>
+    </ol>
+  </body>
+  </html>

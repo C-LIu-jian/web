@@ -1,0 +1,80 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>圣杯布局</title>
+    <style>
+      .header,
+      .footer {
+        padding: 10px;
+        display: block;
+        /* width: 100%; */
+        background: #cccccc;
+        font-size: 32px;
+        text-align: center;
+        background: #ccc;
+      }
+      .contents {
+        display: block;
+        padding: 0 160px;
+      }
+      .contents::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .left,
+      .main,
+      .right {
+        float: left;
+        position: relative;
+      }
+      .main {
+        width: 100%;
+        background: #fcc;
+      }
+      .left {
+        margin-left: -100%;
+        width: 160px;
+        background: #ccf;
+        right: 160px;
+      }
+      .right {
+        margin-right: -240px;
+        width: 160px;
+        background: #cfc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">头部</div>
+    <div class="contents">
+      <div class="main">
+        <h2>内容部分</h2>
+        <p>
+          李宋要韩太惜韩劫见谭单君徒亓第极入沫，大都狂自知应诗李次陀，
+          承同留乌人方皮帮的斯恶上在徒你非才满，弟下入，尘落当母雷国三天尝太斗老。
+        </p>
+        <p>
+          首逝磊文人事之妙死啦都秦帅五洪天，井我者在圣氏远朗间楚他极绪太，
+          虑有心变单叹郭中小在德死是先然不宋惊，着皇他第欲年之，范郭担者又好。
+        </p>
+      </div>
+      <div class="left">
+        <h2>左侧栏</h2>
+        <p>
+          在尹们归到的文使收，皇徨天外第拆你了未苦们秦仍放之畴了，国都车着要报创人你变郭秦国将十希将，
+          头也狱家了设要和可何了，才念掸爱天， 。
+        </p>
+      </div>
+
+      <div class="right">
+        <h2>右侧栏</h2>
+        <p>
+          过今杀而我是大舟你终松之太陛甲拾，药判的把釜衣韩联航锐尺，后洪谭，
+          求斯无意掸蒲不感的总发总事者冒家妙李，
+        </p>
+      </div>
+    </div>
+    <div class="footer">底部</div>
+  </body>
+</html>

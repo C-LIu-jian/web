@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒子阴影</title>
+    <style>
+        .code {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        /* .wrap {
+            width: 600px;
+            height: 400px;
+            background: url(imgs/macbg.png) center center;
+        } */
+        .box {
+            margin: 50px;
+            padding: 30px 50px 30px 50px;
+            width: 200px;
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #999;
+            color: #ccc;
+            /* background: #fff; */
+            background: transparent;
+            text-shadow: 1px 1px 2px #000;
+            border-radius: 50%;
+            border: 20px solid #f00;
+            box-shadow: 0px 0px 10px 30px #00f;
+            outline: 10px dashed #090;
+        }
+        .thumb {
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            display: inline-block;
+        }
+        .img1 {
+            background-image: url(imgs/p3.jpg);
+        }
+        .img2 {
+            background-image: url(imgs/p4.jpg);
+        }
+        .img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>练习：盒子阴影 box-shadow</h1>
+    <div class="thumb img1">A</div>
+    <div class="thumb img2">B</div>
+    <div class="img-box">
+        <img src="imgs/p1.jpg" class="img">
+    </div>
+    <img src="imgs/p2.jpg" class="img">
+    <img src="imgs/p3.jpg" class="img">
+    <img src="imgs/p4.jpg" class="img">
+</body>
+</html>

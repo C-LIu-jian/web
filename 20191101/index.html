@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒子阴影</title>
+    <style>
+        .code {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        /* .wrap {
+            width: 600px;
+            height: 400px;
+            background: url(imgs/macbg.png) center center;
+        } */
+        .box {
+            margin: 50px;
+            padding: 30px 50px 30px 50px;
+            width: 200px;
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #999;
+            color: #ccc;
+            /* background: #fff; */
+            background: transparent;
+            text-shadow: 1px 1px 2px #000;
+            border-radius: 50%;
+            border: 20px solid #f00;
+            box-shadow: 0px 0px 10px 30px #00f;
+            outline: 10px dashed #090;
+        }
+        .gap {
+            margin-top: 30px;
+            border: none;
+            border-bottom: 1px dashed #000;
+        }
+        .img {
+            width: 100px;
+            height: 100px;
+        }
+        .photos {
+            display: block;
+            position: relative;
+        }
+        .img-box {
+            margin: 10px;
+            width: 200px;
+            padding: 10px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            position: relative;
+            /* box-shadow: 1px 1px 3px #333; */
+            z-index: 0;
+        }
+        .img-box img {
+            width: 100%;
+            position: relative;
+        }
+        .img-box::before {
+            content: '';
+            height: 10px;
+            border-radius: 50%;
+            position: absolute;
+            left: 10px;
+            right: 10px;
+            bottom: 0px;
+            box-shadow: 0 2px 4px #666;
+            z-index: -1;
+        }
+        .img-box::after {
+            content: '';
+            height: 14px;
+            background: #fff;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .img-box:hover::before {
+            box-shadow: 0 3px 7px #000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>练习：盒子阴影 box-shadow</h1>
+    <!-- <p style="margin: 20px auto;width:50%;background:green;text-align:center">TEXT</p> -->
+    <div class="photos">
+        <div class="img-box">
+            <img src="imgs/p1.jpg">
+            <!-- <div class="shadow"></div> -->
+        </div>
+        <div class="img-box">
+            <img src="imgs/p2.jpg">
+            <!-- <div class="shadow"></div> -->
+        </div>
+        <div class="img-box">
+            <img src="imgs/p3.jpg">
+        </div>
+        <div class="img-box">
+            <img src="imgs/p4.jpg">
+        </div>
+    </div>
+
+    <hr class="gap">
+    <img src="imgs/p2.jpg" class="img">
+    <img src="imgs/p3.jpg" class="img">
+    <img src="imgs/p4.jpg" class="img">
+</body>
+</html>

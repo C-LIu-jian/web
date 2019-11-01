@@ -1,0 +1,14 @@
+集团中心_JAVA42&测试05班_别名设置_类型转换器_7
+http://oracleoaec.gensee.com/webcast/site/vod/play-8d623bc6c3ca4ad4833e482f169e3fef
+集团中心_JAVA42&测试05班_Properties属性配置_6
+http://oracleoaec.gensee.com/webcast/site/vod/play-4d6ab5f78c9743c29bf5a0eaa72c771b
+集团中心_JAVA42&测试05班_查询返回值_#{},${}区别_resultType_resultMap单表_5
+http://oracleoaec.gensee.com/webcast/site/vod/play-c6c324d8a56d45879fef48b0abf55e59
+集团中心_JAVA42&测试05班_MyBatis映射文件之参数处理_4
+http://oracleoaec.gensee.com/webcast/site/vod/play-cae060f85e104cecbd4f7f751390d003
+集团中心_JAVA42&测试05班_MyBatis接口编程_3
+http://oracleoaec.gensee.com/webcast/site/vod/play-9a70f631e04a48a5b5cbb0667fd312c6
+集团中心_JAVA42&测试05班_mybatis作业讲解_mybatis对象作用域_2
+http://oracleoaec.gensee.com/webcast/site/vod/play-061da7219e0b44fd8a12a0006ec1a4f6
+
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间+ id 名字来确定唯一的sql语句-->
+<mapper namespace="com.crazycode.mapper.StudentMapper">
+    <select id="findStudentById" resultMap="stu_map">
+       select id,sname,sno,ssex from student where id = #{id}
+   </select>
+
+    <resultMap id="stu_map" type="student">
+        <result column="ssex" property="ssex" typeHandler="com.crazycode.typehandler.StringToIntHandler"></result>
+    </resultMap>
+
+    <select id="findAllStudents" resultType="com.crazycode.pojo.Student">
+        select id,sname,sno,ssex from student
+    </select>
+
+    <select id="findStudentByNameAndSex" resultType="com.crazycode.pojo.Student">
+  <!--select id,sname,sno,ssex from student where sname=#{param1} and ssex=#{param2}-->
+        select id,sname,sno,ssex from student where sname=#{param1} and ssex=#{param2}
+    </select>
+
+    <select id="findStudentByNameAndSex2" resultType="com.crazycode.pojo.Student">
+        select id,sname,sno,ssex from student where sname=#{name} and ssex=#{sex}
+    </select>
+
+    <select id="findStudent" resultType="com.crazycode.pojo.Student">
+        select id,sname,sno,ssex from student where sname=#{sname} and ssex=#{ssex}
+    </select>
+
+    <select id="findStudentByArray" resultType="com.crazycode.pojo.Student">
+        select id,sname,sno,ssex from student where sname=#{array[0]} and ssex=#{array[1]}
+    </select>
+
+    <select id="findStudentByList" resultType="com.crazycode.pojo.Student">
+        <!--select id,sname,sno,ssex from student where sname=#{list[0]} and ssex=#{list[1]}-->
+        select id,sname,sno,ssex from student where sname=#{list[0]} and ssex=#{collection[1]}
+    </select>
+
+    <select id="findAllStudentsMap" resultType="com.crazycode.pojo.Student">
+        select id,sname,sno,ssex from student
+    </select>
+
+    <select id="findStudentsByNameLike" resultType="com.crazycode.pojo.Student">
+        select id,sname,sno,ssex from student where sname like #{value}
+    </select>
+
+    <insert id="saveStudent">
+        insert into Student values(null,#{sno},#{sname},#{ssex,typeHandler=com.crazycode.typehandler.StringToIntHandler})
+    </insert>
+</mapper>

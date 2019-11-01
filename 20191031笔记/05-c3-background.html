@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3 background</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+    }
+    body {
+        margin: 0 5px;
+    }
+    .code {
+        margin: 10px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: blue;
+    }
+    </style>
+</head>
+<body>
+    <h1>CSS3 background</h1>
+    <pre class="code">
+{
+    background-image: url(imgs/bg.jpg);
+    background-position: 0 0;
+    background-attachment: scroll;
+    background-repeat: repeat;
+    background-color: color;
+    background-size: auto auto;     /* H5 */
+    background-origin: padding-box; /* H5 */
+    background-clip: border-box;    /* H5 */
+    background: image position attach repeat color / size origin clip;
+}
+    </pre>
+    <style>
+        .box {
+            width: 260px;
+            height: 220px;
+            padding: 30px;
+            font-size: 16px;
+            border: 30px solid #00000080;
+            background: #999;
+            background-image: url(imgs/1234.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-attachment: local;
+            background-attachment: fixed; /* body */
+            /* background-size: cover; */
+            /* background-origin: border-box; */
+            /* background-clip: content-box; */
+            /* visibility: hidden; */
+            /* display: none; */
+            overflow: scroll;
+            overflow: auto;
+            /* overflow: visible; */
+            overflow: hidden;
+        }
+        .box:hover {
+            position: relative;
+            top: -100px;
+            left: 150px;
+        }
+    </style>
+    <div class="box">
+        <img src="imgs/p1.jpg" alt="">
+        <p>让帅定轻玉雷言惊气解先朗为都罪冒况，同逃专郭蒲那动当听唯，打就别当为有同到三，在脱秦场关服人骂言友听丹关由帝是，不得徒成里，着行才夫小临师死说的郭非小国同生卅笔将，我都自韩洪玉杨感找大家，的太心帅她白肯商两沫量自李君略当皇，名考前，主天入俭关先感国策，愿。</p>
+        <p>让帅定轻玉雷言惊气解先朗为都罪冒况，同逃专郭蒲那动当听唯，打就别当为有同到三，在脱秦场关服人骂言友听丹关由帝是，不得徒成里，着行才夫小临师死说的郭非小国同生卅笔将，我都自韩洪玉杨感找大家，的太心帅她白肯商两沫量自李君略当皇，名考前，主天入俭关先感国策，愿。</p>
+        <p>让帅定轻玉雷言惊气解先朗为都罪冒况，同逃专郭蒲那动当听唯，打就别当为有同到三，在脱秦场关服人骂言友听丹关由帝是，不得徒成里，着行才夫小临师死说的郭非小国同生卅笔将，我都自韩洪玉杨感找大家，的太心帅她白肯商两沫量自李君略当皇，名考前，主天入俭关先感国策，愿。</p>
+    </div>
+    <p>&nbsp;</p>
+</body>
+</html>
